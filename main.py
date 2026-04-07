@@ -41,8 +41,10 @@ llm = GeminiLlmService(
 
 )'''
 
+api_key = os.getenv('GROQ_API_KEY')
+
 llm = OpenAILlmService(
-    api_key="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",
+    api_key=api_key,
     base_url="https://api.groq.com/openai/v1",
     model="llama-3.1-8b-instant"
 )
